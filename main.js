@@ -8,8 +8,9 @@ checkButton.addEventListener("click", checkBirthdayIsLucky);
 function checkBirthdayIsLucky() {
   const dob = janamDin.value;
   const sum = calculateSum(dob);
-  if (dob && sum) checkingYourLuck(sum, luckyNumber.value);
-  else {
+  if (dob && sum) {
+    checkingYourLuck(sum, luckyNumber.value);
+  } else {
     outputBox.innerHTML = "Please enter both the input fields😤";
   }
 }
